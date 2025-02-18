@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNest - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registrationForm" novalidate>
+            <h1>Create Account</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="fullname" placeholder="Full name" required minlength="2" pattern="[A-Za-z ]+">
+                    <i class="bx bxs-user"></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="username" placeholder="Username" required minlength="3" pattern="[A-Za-z0-9_]+">
+                    <i class="bx bxs-user"></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <i class="bx bxs-envelope"></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" id="phone" placeholder="Phone number" required pattern="[0-9]{10}">
+                    <i class="bx bxs-phone"></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" id="password" placeholder="Password" required minlength="8">
+                    <i class='bx bxs-lock-alt'></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                    <small class="error-message"></small>
+                </div>
+            </div>
+
+            <div class="terms-container">
+                <label>
+                    <input type="checkbox" id="terms" required>
+                    I hereby declare that the information provided is true and correct
+                </label>
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+            <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

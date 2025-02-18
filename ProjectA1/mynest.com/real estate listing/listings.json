@@ -1,0 +1,16 @@
+[
+  {
+    "image": "https://via.placeholder.com/300",
+    "title": "Modern Apartment",
+    "price": "$500,000",
+    "location": "New York",
+    "contact": "123-456-7890"
+  },
+  {
+    "image": "https://via.placeholder.com/300",
+    "title": "Luxury Villa",
+    "price": "$2,000,000",
+    "location": "Los Angeles",
+    "contact": "987-654-3210"
+  }
+]
